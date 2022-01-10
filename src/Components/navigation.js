@@ -18,11 +18,10 @@ function Navigation() {
 
   let map = new Map([
     ['/home',1],
-    ['/affiliates',2],
-    ['/courses',3],
-    ['/blog',4],
-    ['/contacts',5],
-    ['/contribute',6]
+    ['/datasets', 2],
+    ['/blog',3],
+    ['/contacts',4],
+    ['/contribute',5]
   ]);
 
   const [active,setActive] = useState(map.get(loc))
@@ -62,26 +61,22 @@ function Navigation() {
                 {/* </a> */}
             </li>
             <li class="nav-item ">
-                <Link to="/affiliates" class={`nav-link grow ${active===2 ? "active": ""} ${!mobile && active===2 ? "bbi": ""}`} onClick= {()=>onChange(2)}>
-                Affiliates</Link>
-            </li>
+                <Link to="/datasets" class={`nav-link grow ${active===2 ? "active": ""} ${!mobile && active===2 ? "bbi": ""}`} onClick= {()=>onChange(2)}>
+                Datasets</Link>
+            </li>            
             <li class="nav-item">
-                <Link to="/courses"  class={`nav-link grow ${active===3 ? "active ": ""} ${!mobile && active===3 ? "bbi": ""}`}  onClick= {()=>onChange(3)}>
-                Courses</Link>
-            </li>
-            <li class="nav-item">
-                <Link to="/blog" class={`nav-link grow ${active===4 ? "active": ""} ${!mobile && active===4 ? "bbi": ""}`} onClick= {()=>onChange(4)}>
+                <Link to="/blog" class={`nav-link grow ${active==3 ? "active": ""} ${!mobile && active===3 ? "bbi": ""}`} onClick= {()=>onChange(3)}>
                 Blog
                 </Link>
             </li>
             <li class="nav-item ">
-                <Link to="/contacts"  className={`nav-link grow ${active===5 ? "active ": ""} ${!mobile && active===5 ? "bbi": ""}`}  onClick= {()=>onChange(5)}>
+                <Link to="/contacts"  className={`nav-link grow ${active===4 ? "active ": ""} ${!mobile && active===4 ? "bbi": ""}`}  onClick= {()=>onChange(4)}>
                 
                 Contacts
                 </Link>
             </li>
             <li class="nav-item">
-                <Link to="/contribute"  class={`nav-link grow ${active===6 ? "active ": ""} ${!mobile && active===6 ? "bbi": ""}`} onClick= {()=>onChange(6)}>
+                <Link to="/contribute"  class={`nav-link grow ${active===5 ? "active ": ""} ${!mobile && active===5 ? "bbi": ""}`} onClick= {()=>onChange(5)}>
                 Contribute
                 </Link>
             </li>

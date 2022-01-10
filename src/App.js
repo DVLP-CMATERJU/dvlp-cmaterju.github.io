@@ -11,6 +11,7 @@ import UserForm  from "./UserForm";
 import Member from "./Pages/members";
 import Contact from "./Pages/contact";
 import UpdatePass from "./Pages/resetPassword";
+import Datasets from "./Pages/datasets";
 
 
 function App() {
@@ -20,9 +21,8 @@ function App() {
         <Switch>
             <Route exact path="/" render={props => <Home /> }/>
             <Route path="/home" exact render={props => <Home/>} />
-            <Route path="/courses" exact render={props => <Comingsoon/>} />            
-            <Route path="/blog" exact render={props => <Comingsoon/>} />            
-            <Route path="/affiliates" exact render={props => <Comingsoon/>} />      
+            <Route path="/datasets" exact render={props =>  <Datasets />} />            
+            <Route path="/blog" exact render={props => <Comingsoon/>} />                        
             <Route path="/login" exact render={props => <SignIn/>} />      
             <Route path="/contribute" exact render={props => <Contribute/>} />  
             <Route path="/profile" exact render={props => <Profile/>} />  
