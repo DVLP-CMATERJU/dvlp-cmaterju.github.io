@@ -12,7 +12,8 @@ In case you want to get the full dataset, please send the signed and scanned cop
         download_link : false,
         application_link : true,
         app_path: "/files/Dataset Application Form.docx",
-        img_link: '/imgs/fishdb.jpg'
+        img_link: '/imgs/fishdb.jpg',
+        link : '/#/datasets/fishdb'
     },
     
 ]
@@ -24,8 +25,8 @@ const DatasetCard = ({props}) => {
     return (
         <article id={props.id} className="grow shadow-4  mw6 br3 hidden ba b--black-10 mv4 mh2">
             
-                <img src={props.img_link} className="db w-100 br2 br--top" alt="Photo of a kitten looking menacing."></img>
-            <a href={`/datasets/#${props.id}`} className="db no-underline black-90" >
+                <img src={props.img_link} className="db w-100 br2 br--top" alt="Photo of dataset image"></img>
+            <a href={props.link} className="db no-underline black-90" >
                 <h1 className="f4 bg-near-white br3 br--top black-90 mv0 pv2 ph3">{props.title}</h1>
             </a>
             <div className="pa3 bt b--black-10">

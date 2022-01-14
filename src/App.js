@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
+import { HashRouter as Router, Route,Switch } from "react-router-dom";
 import './App.css';
 // import Splash from "./Components/splash";
 import Home from "./Pages/home";
@@ -12,6 +12,8 @@ import Member from "./Pages/members";
 import Contact from "./Pages/contact";
 import UpdatePass from "./Pages/resetPassword";
 import Datasets from "./Pages/datasets";
+import FishDB from "./Pages/fish-db";
+
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
             <Route exact path="/" render={props => <Home /> }/>
             <Route path="/home" exact render={props => <Home/>} />
             <Route path="/datasets" exact render={props =>  <Datasets />} />            
+            <Route path="/datasets/fishdb" exact render={props =>  <FishDB />} />            
             <Route path="/blog" exact render={props => <Comingsoon/>} />                        
             <Route path="/login" exact render={props => <SignIn/>} />      
             <Route path="/contribute" exact render={props => <Contribute/>} />  
