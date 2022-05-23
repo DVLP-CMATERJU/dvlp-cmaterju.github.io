@@ -62,7 +62,7 @@ const JuCyt = (props) => {
                     <div class="container">
                         <h2 class="f3 gray  ttu tracked rcolor">Dataset details</h2>
                         <a href="https://github.com/DVLP-CMATERJU/JUCYT_V1" class="lead pb0">Github link</a>
-                        <p class="f5 pv0">Num images : 1253 cytology images from different organs, captured in different magnifications-4X, 10X, and 40X</p>                        
+                        <p class="f5 pv0">Num images : 1253 cytology images, captured in different magnifications-4X, 10X, and 40X</p>                        
                     </div>
                     <div className="container">
                         <h2 class="f3 gray  ttu tracked rcolor">Dataset sample images</h2>   
