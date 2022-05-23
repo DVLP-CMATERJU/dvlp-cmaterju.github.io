@@ -13,6 +13,7 @@ import Contact from "./Pages/contact";
 import UpdatePass from "./Pages/resetPassword";
 import Datasets from "./Pages/datasets";
 import FishDB from "./Pages/fish-db";
+import JuCyt from './Pages/jucyt';
 
 
 
@@ -24,7 +25,8 @@ function App() {
             <Route exact path="/" render={props => <Home /> }/>
             <Route path="/home" exact render={props => <Home/>} />
             <Route path="/datasets" exact render={props =>  <Datasets />} />            
-            <Route path="/datasets/fishdb" exact render={props =>  <FishDB />} />            
+            <Route path="/datasets/fishdb" exact render={props =>  <FishDB />} />  
+            <Route path="/datasets/jucyt" exact render={props =>  <JuCyt />} />            
             <Route path="/blog" exact render={props => <Comingsoon/>} />                        
             <Route path="/login" exact render={props => <SignIn/>} />      
             <Route path="/contribute" exact render={props => <Contribute/>} />  

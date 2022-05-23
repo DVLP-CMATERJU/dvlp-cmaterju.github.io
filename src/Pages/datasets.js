@@ -15,6 +15,16 @@ In case you want to get the full dataset, please send the signed and scanned cop
         img_link: '/imgs/fishdb.jpg',
         link : '/#/datasets/fishdb'
     },
+    {
+        id: "JUCYT_V1",
+        title : "JUCYT_V1 Cytology Dataset",
+        description: "JUCYT_V1 is a cytology image database, which contains 1253 cytology images, captured in different magnifications-4X, 10X, and 40X. These cytology images are captured by a 10 MP CMOS Camera, which is attached to the trinocular microscope. 664 Benign samples, 589 Malignant samples. Here we have given only 6 cytology images(3 Benign samples, 3 Malignant samples) in 40x magnification along with proper labeling as an example. The complete dataset will be uploaded soon.",
+        download_link : false,
+        application_link : false,
+        app_path: "/files/Dataset Application Form.docx",
+        img_link: '/imgs/B10A.jpg',
+        link : '/#/datasets/jucyt'
+    },
     
 ]
 
