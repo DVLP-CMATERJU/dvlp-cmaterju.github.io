@@ -23,7 +23,9 @@ const Contact = () =>{
                 </div>
                 <div class="container">
                     <h2 class="f3 gray ttu rcolor caseS">Phd Scholars</h2>
-                    <p class="lead pb0">Prof. Nibaran Das</p>
+                    <p class="lead pb0">Soumyajyoti Dey</p>
+                    <p class="f5 pv0">Jadavpur University</p>
+                    <p class="lead pb0">Somenath Kuiry</p>
                     <p class="f5 pv0">Jadavpur University</p>
                 </div>
                 <div class="container">
